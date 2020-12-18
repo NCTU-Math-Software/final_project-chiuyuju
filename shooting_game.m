@@ -16,19 +16,22 @@ function shooting_game
     miss=0;     %失誤次數
     
     while 1>0
+        %顯示分數及失誤次數
         title(['Score: ',num2str(score),'  Miss: ',num2str(miss)])
         ax=axes();
         xlim([0 10]);
         ylim([0 10]);
         hold on
         coo=ones(1,2);
+        %目標物隨機出現
         x1=rand(1)*8.6;
         y1=rand(1)*8.6;
         X=[x1 x1+0.7 x1+0.7 x1 x1];
         Y=[y1 y1 y1+0.7 y1+0.7 y1];
         pause(0.5);
         fill(X,Y,'r');pause(0.6)
-
+        
+        %點擊滑鼠，進行射擊
         action='down';
         switch (action)
             case 'down'
