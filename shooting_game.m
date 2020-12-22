@@ -1,24 +1,24 @@
 function shooting_game
-    %畫圖,定座標
+    %%畫圖,定座標
     figure      
     ax=axes();
     xlim([0 10]);
     ylim([0 10]);
     hold on
     
-    %開始訊息
+    %%開始訊息
     title('click mouse to start the game.')
     txt={'Rule:','1. Click the target to get point','2. If you miss over five times, the game will end.'};
     text(2.5,7.5,txt)
     if waitforbuttonpress==0
-       title('START')
+       title('START');pause(0.2)
     end
         
     score=0;    %計分
     miss=0;     %失誤次數
     
     while 1>0
-        %顯示分數及失誤次數
+        %%顯示分數及失誤次數
         title(['Score: ',num2str(score),'  Miss: ',num2str(miss)])
         ax=axes();
         xlim([0 10]);
@@ -26,7 +26,7 @@ function shooting_game
         hold on
         coo=ones(1,2);
         
-        %目標物隨機出現
+        %%目標物隨機出現
         x1=rand(1)*8.6;
         y1=rand(1)*8.6;
         X=[x1 x1+0.7 x1+0.7 x1 x1];
@@ -34,7 +34,7 @@ function shooting_game
         pause(0.5);
         fill(X,Y,'r');pause(0.8)
         
-        %點擊滑鼠，進行射擊
+        %%點擊滑鼠，進行射擊
         action='down';
         switch (action)
             case 'down'
@@ -50,7 +50,7 @@ function shooting_game
                 miss=miss+1;
         end
         
-        %判斷遊戲是否結束
+        %%判斷遊戲是否結束
         if miss>=5
             %disp('END')
             clf('reset')
