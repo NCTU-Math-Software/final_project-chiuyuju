@@ -52,7 +52,6 @@ function shooting_game
         
         %%§PÂ_¹CÀ¸¬O§_µ²§ô
         if miss>=5
-            %disp('END')
             clf('reset')
             axis([0 10 0 10])
             hold on
