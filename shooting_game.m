@@ -1,7 +1,6 @@
 function shooting_game
     %%畫圖,定座標
     figure      
-    ax=axes();
     xlim([0 10]);
     ylim([0 10]);
     hold on
