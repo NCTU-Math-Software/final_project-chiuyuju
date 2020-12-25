@@ -6,6 +6,7 @@ final_project-chiuyuju created by GitHub Classroom
 `如何開始遊戲`
 1. 下載shooting_game.m
 2. 執行shooting_game.m，依照畫面指示操作。
+3. 第一次遊玩請先執行並開始遊戲，等待遊戲自動結束後，再重新執行shooting_game.m
 
 `簡介`
 * 開始遊戲後，將在畫面上隨機出現目標物，使用者需以滑鼠左鍵點擊目標物。
