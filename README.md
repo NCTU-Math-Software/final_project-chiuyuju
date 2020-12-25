@@ -3,6 +3,7 @@
 ##### 如何開始遊戲
 1. 下載shooting_game.m
 2. 在 Command Window 輸入 shooting_game
+3. 閱讀完規則後，依指示遊玩。
 
 ##### 如何結束遊戲
 * 當失誤次數達五次，遊戲會自動結束。
