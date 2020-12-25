@@ -59,7 +59,7 @@ function shooting_game
             title(['Score: ',num2str(score),'  Miss: ',num2str(miss)])
             hold on
             txt={'End of the game','It will close soon'};
-            text(0.2,9,txt)
+            text(2.5,7.5,txt)
             pause(1.8)
             close
             break
