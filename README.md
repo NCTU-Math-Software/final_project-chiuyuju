@@ -1,7 +1,4 @@
-# final_project-chiuyuju
-final_project-chiuyuju created by GitHub Classroom
-
-**射擊遊戲**
+#射擊遊戲
 
 `如何開始遊戲`
 1. 下載shooting_game.m
